@@ -5,21 +5,21 @@
 class Filmsort < Formula
   desc "Film library manager."
   homepage "https://github.com/adam42389/filmsort"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adam42389/filmsort/releases/download/v2.1.0/filmsort_Darwin_x86_64.tar.gz"
-      sha256 "898e966c04061506c10d565757ead27380b0fcdf07c005181df9d1f1b3d355ae"
+      url "https://github.com/adam42389/filmsort/releases/download/v2.1.1/filmsort_Darwin_x86_64.tar.gz"
+      sha256 "49d560e301fc35ec79d4d67c9574105c7f46e2070a1537529123ed506c62f8da"
 
       def install
         bin.install "filmsort"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adam42389/filmsort/releases/download/v2.1.0/filmsort_Darwin_arm64.tar.gz"
-      sha256 "3222c85677324f77deac5c2f25be39d0bab6898297bef64dc010a5bf8a8d3b76"
+      url "https://github.com/adam42389/filmsort/releases/download/v2.1.1/filmsort_Darwin_arm64.tar.gz"
+      sha256 "962f57e7c6dd4ec3be40d5ab7faf1b7d44dc160aeca21de76b397a890fb958cd"
 
       def install
         bin.install "filmsort"
@@ -29,24 +29,24 @@ class Filmsort < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/adam42389/filmsort/releases/download/v2.1.0/filmsort_Linux_armv6.tar.gz"
-      sha256 "51e4f1251504b318b2a9130307d4a82ae5e2539601a958ee4ec30a8b5abd0793"
-
-      def install
-        bin.install "filmsort"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/adam42389/filmsort/releases/download/v2.1.0/filmsort_Linux_x86_64.tar.gz"
-      sha256 "21fda65c2209f1c3e808ab2f6ff93392730a87d3dd0ae56002e96d69a51e5d2a"
+      url "https://github.com/adam42389/filmsort/releases/download/v2.1.1/filmsort_Linux_armv6.tar.gz"
+      sha256 "0692f9114743fffef272a799feed7f38ded7901f921b37365e14dfad9eda8caf"
 
       def install
         bin.install "filmsort"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adam42389/filmsort/releases/download/v2.1.0/filmsort_Linux_arm64.tar.gz"
-      sha256 "96a1cb02242ba0e8f9b01315761ec89067df7f723c2823cf98109759297fd731"
+      url "https://github.com/adam42389/filmsort/releases/download/v2.1.1/filmsort_Linux_arm64.tar.gz"
+      sha256 "03741b29bfdea3f0554322362334380eb7c21181b07d4e918fcce5ecc0bd6347"
+
+      def install
+        bin.install "filmsort"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/adam42389/filmsort/releases/download/v2.1.1/filmsort_Linux_x86_64.tar.gz"
+      sha256 "e78439f8f944a5d57df66507830a97eadfb8e8ad54eb4772568a9e2b09d4b35f"
 
       def install
         bin.install "filmsort"
